@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShopEase - Simple E-commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">ShopEase</div>
+    <nav>
+      <ul>
+        <li><button class="nav-btn active" data-section="home">Home</button></li>
+        <li><button class="nav-btn" data-section="about">About</button></li>
+        <li><button class="nav-btn" data-section="wishlist">Wishlist</button></li>
+        <li><button class="nav-btn" data-section="contact">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="content-section active">
+      <h1>Welcome to ShopEase</h1>
+      <p>Discover the best products at unbeatable prices.</p>
+      <div class="products">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150" alt="Cool Sneakers" />
+          <h3>Cool Sneakers</h3>
+          <p>$49.99</p>
+          <button>Add to Wishlist</button>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150" alt="Smart Watch" />
+          <h3>Smart Watch</h3>
+          <p>$199.99</p>
+          <button>Add to Wishlist</button>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/150" alt="Bluetooth Headphones" />
+          <h3>Bluetooth Headphones</h3>
+          <p>$89.99</p>
+          <button>Add to Wishlist</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="content-section">
+      <h1>About Us</h1>
+      <p>
+        ShopEase is your friendly neighborhood online store offering the latest and greatest products with fast delivery and excellent customer service.
+      </p>
+    </section>
+
+    <section id="wishlist" class="content-section">
+      <h1>Your Wishlist</h1>
+      <ul id="wishlist-items">
+        <li>No items yet. Add some from the home page!</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h1>Contact Us</h1>
+      <form id="contact-form">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" required /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" required /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea id="message" required></textarea><br />
+
+        <button type="submit">Send</button>
+      </form>
+      <p id="contact-msg"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
